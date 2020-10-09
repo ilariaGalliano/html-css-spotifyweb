@@ -7,105 +7,111 @@
 body{
   font-family: sans-serif;
 }
-span{
-  padding: 15px;
-}
 
 /* App Styles */
 .container{
-  width: 1024px;
-  max-width: 100%;
-  margin: 0 auto;
   height: 100vh;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Top */
 .top{
-  height: 100vh;
-  background: brown;
-  display:flex;
-  position: relative;
+  background: red;
+  flex-grow: 1;
+  display: flex;
 }
-/* Slide-bar */
-.slide-bar{
+/* Side-bar */
+.sidebar{
   flex-basis: 230px;
+  display: flex;
+  flex-direction: column;
   background: green;
 }
-.logo{
-  height: calc(100vh - 380px);
-}
-.playlist{
-  height: 300px;
-  background: yellow;
-}
-.text-account{
-  height: 80px;
-  color: white;
-  background: #1c1c1c;
-}
-/* Nav Scrollable */
-.general-text{
+.sidebar-top{
   flex-grow: 1;
-  position: relative;
-  height: calc(100vh - 80px);
+  background: #ccc;
 }
+.sidebar-bottom{
+  height: 80px;
+  background: #888;
+}
+/* Scrollable */
 .nav{
-  width: 100%;
-  height: 90px;
-  background: rgba(100, 100, 100, 0.5);
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(100, 50, 0, 0.5);
   z-index: 1;
 }
 .general-text .scrollable{
-  width: 100%;
-  height: calc(100vh - 80px);
   position: absolute;
   top: 0;
   left: 0;
-  padding: 80px 15px 30px;
+  width: 100%;
+  height: 100%;
   overflow-y: auto;
+  background: #000;
+  padding: 90px 15px 30px;
 }
-.nav-menu{
-  background: yellow;
-  height: 60px;
+/* General */
+.general-text{
+  position: relative;
+  background: #444;
+  flex-grow: 1;
 }
-
-/* Box */
-.box{
-  height: 200px;
+.general-menu{
+  height: 90px;
+  background: #222;
 }
-.img-box{
+.general-category{
+  /*height:400px;*/
+  margin-bottom: 30px;
+}
+.album-list{
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
-.img{
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  background: #fff;
-  border: 1px solid black;
+.album-list .album{
+  flex-basis: calc(100% / 6 - 15px);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  height: 200px;
+  background: #ccc;
 }
 
-/* Bottom*/
+/* bottom */
 .bottom{
   height: 80px;
-  background: grey;
+  background: #333;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
+/* Col-bottom */
 .col-left,
 .col-center,
 .col-right{
-  width: 150px;
-  height: 100%;
-  background: blue;
-  border: 1px solid black;
+  height: 80px;
+  background: #666;
 }
+.col-left{
+  flex-basis: 230px;
+}
+.col-center{
+  flex-basis: 40%;
+}
+.col-right{
+  flex-basis: 230px;
+}
+
 /* Tablet */
-@media screen and (max-width: 800px) {
-  .slide-bar{
+@media screen and (max-width: 768px) {
+  .sidebar{
     flex-basis: 60px;
-    background: green;
   }
 }
