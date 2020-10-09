@@ -6,14 +6,25 @@
 }
 body{
   font-family: sans-serif;
+  color: #fff;
 }
-
+a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.text-center{
+  text-align: center;
+}
 /* App Styles */
 .container{
   height: 100vh;
   background: lightblue;
   display: flex;
   flex-direction: column;
+}
+.playlist{
+  margin: 20px;
 }
 
 /* Top */
@@ -27,15 +38,55 @@ body{
   flex-basis: 230px;
   display: flex;
   flex-direction: column;
-  background: green;
+  background: #000000;
 }
 .sidebar-top{
   flex-grow: 1;
-  background: #ccc;
+}
+.logo{
+  max-width: 180px;
+  padding: 15px;
+}
+.sidebar-top ul li a i{
+  font-size: 30px;
+  margin: 10px 20px;
 }
 .sidebar-bottom{
   height: 80px;
-  background: #888;
+}
+.playlist ul li{
+  list-style: none;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.playlist-bold{
+  font-size: 20px;
+  margin: 25px 0 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.playlist .fa-plus-square{
+  font-size: 40px;
+  padding: 0;
+  margin:0;
+  margin-right: 20px;
+}
+.installa-app i,
+.installa-app a{
+  color: #666666;
+}
+.installa-app{
+  border-bottom: 1px solid #666666;
+}
+.fa-arrow-alt-circle-down{
+  font-size: 18px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+.fa-user-circle{
+  padding-right: 10px;
+  margin-top: 10px;
+  font-size: 26px;
 }
 /* Scrollable */
 .nav{
@@ -44,8 +95,19 @@ body{
   left: 0;
   width: 100%;
   height: 90px;
-  background: rgba(100, 50, 0, 0.5);
+  background:rgba(8, 11, 17, 0.5);
   z-index: 1;
+}
+.btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 10px 30px;
+  color:#fff;
+  background: #080b11;
+  border-color: #fff;
 }
 .general-text .scrollable{
   position: absolute;
@@ -54,7 +116,7 @@ body{
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  background: #000;
+  background: #141921;
   padding: 90px 15px 30px;
 }
 /* General */
@@ -65,10 +127,25 @@ body{
 }
 .general-menu{
   height: 90px;
-  background: #222;
+  background: #141921;
+  margin-bottom: 10px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.general-menu ul li{
+  font-size: 14px;
+  margin-top: 40px;
+  list-style: none;
+  text-transform: uppercase;
+  color: #666666;
 }
 .general-category{
-  /*height:400px;*/
+  margin-bottom: 30px;
+}
+.general-category h2{
   margin-bottom: 30px;
 }
 .album-list{
@@ -76,13 +153,24 @@ body{
   flex-wrap: wrap;
   list-style: none;
 }
-.album-list .album{
+.album-list .album {
   flex-basis: calc(100% / 6 - 15px);
   margin-right: 15px;
   margin-bottom: 15px;
-  border: 1px solid red;
   height: 200px;
-  background: #ccc;
+}
+.album-list h4{
+  margin-bottom: 10px;
+}
+.album-list small{
+  color: #666666;
+}
+
+.album-list .album img{
+  max-width: 100%;
+}
+.circle{
+  border-radius: 50%;
 }
 
 /* bottom */
