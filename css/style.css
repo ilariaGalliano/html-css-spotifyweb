@@ -16,6 +16,9 @@ a{
 .text-center{
   text-align: center;
 }
+.mb{
+  margin-bottom: 30px;
+}
 /* App Styles */
 .container{
   height: 100vh;
@@ -48,7 +51,7 @@ a{
   padding: 15px;
 }
 .sidebar-top ul li a i{
-  font-size: 30px;
+  font-size: 24px;
   margin: 10px 20px;
 }
 .sidebar-bottom{
@@ -56,7 +59,7 @@ a{
 }
 .playlist ul li{
   list-style: none;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 14px;
 }
 .playlist-bold{
@@ -66,7 +69,7 @@ a{
   text-transform: uppercase;
 }
 .playlist .fa-plus-square{
-  font-size: 40px;
+  font-size: 28px;
   padding: 0;
   margin:0;
   margin-right: 20px;
@@ -133,7 +136,7 @@ a{
 .menu{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 .general-menu ul li{
   font-size: 14px;
@@ -141,12 +144,16 @@ a{
   list-style: none;
   text-transform: uppercase;
   color: #666666;
+  padding: 15px;
 }
 .general-category{
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .general-category h2{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+.general-category span{
+  color: #666666;
 }
 .album-list{
   display: flex;
@@ -165,7 +172,6 @@ a{
 .album-list small{
   color: #666666;
 }
-
 .album-list .album img{
   max-width: 100%;
 }
@@ -176,7 +182,7 @@ a{
 /* bottom */
 .bottom{
   height: 80px;
-  background: #333;
+  background: #272727;
   display: flex;
   justify-content: space-between;
 }
@@ -185,16 +191,69 @@ a{
 .col-center,
 .col-right{
   height: 80px;
-  background: #666;
 }
 .col-left{
   flex-basis: 230px;
+  display: flex;
 }
 .col-center{
   flex-basis: 40%;
 }
 .col-right{
   flex-basis: 230px;
+}
+/* col-left */
+.col-left img{
+  max-height: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.col-left h6{
+  font-size: 14px;
+  color:#fff;
+}
+.col-left small{
+  font-size: 12px;
+  color: #666666;
+}
+.col-left h6,
+.col-left small{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.col-left a{
+  font-size: 16px;
+  color: #666666;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* col-center */
+.music-menu{
+  border-bottom: 3px solid #666666;
+}
+.music-menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.music-menu ul li a i{
+  padding: 10px;
+  font-size: 18px;
+}
+/* col-right */
+.col-right ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.col-right ul li a i{
+  padding: 10px;
+  font-size: 18px;
 }
 
 /* Tablet */
