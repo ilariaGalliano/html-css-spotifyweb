@@ -12,6 +12,11 @@ a{
   color:#fff;
   text-decoration: none;
   font-size: 14px;
+  cursor: pointer;
+}
+span{
+  font-size: 14px;
+  color: #666666;
 }
 .text-center{
   text-align: center;
@@ -19,6 +24,7 @@ a{
 .mb{
   margin-bottom: 30px;
 }
+
 /* App Styles */
 .container{
   height: 100vh;
@@ -47,12 +53,25 @@ a{
   flex-grow: 1;
 }
 .logo{
-  max-width: 180px;
+  max-width: 170px;
   padding: 15px;
 }
 .sidebar-top ul li a i{
   font-size: 24px;
   margin: 10px 20px;
+  color: #666666;
+}
+.sidebar-top ul li a{
+  color: #666666;
+}
+.sidebar-top ul li a:hover{
+  color: #fff;
+  transition: .2s;
+}
+.sidebar-top ul li a i:hover{
+  color: #fff;
+  transition: .2s;
+  transform: scale(1.2);
 }
 .sidebar-bottom{
   height: 80px;
@@ -61,6 +80,7 @@ a{
   list-style: none;
   padding: 10px 0;
   font-size: 14px;
+  color: #666666;
 }
 .playlist-bold{
   font-size: 20px;
@@ -69,7 +89,7 @@ a{
   text-transform: uppercase;
 }
 .playlist .fa-plus-square{
-  font-size: 28px;
+  font-size: 38px;
   padding: 0;
   margin:0;
   margin-right: 20px;
@@ -83,7 +103,7 @@ a{
 }
 .fa-arrow-alt-circle-down{
   font-size: 18px;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-bottom: 10px;
 }
 .fa-user-circle{
@@ -139,12 +159,26 @@ a{
   justify-content: center;
 }
 .general-menu ul li{
-  font-size: 14px;
   margin-top: 40px;
   list-style: none;
+}
+.general-menu ul li a{
+  font-size: 14px;
   text-transform: uppercase;
   color: #666666;
   padding: 15px;
+}
+.general-menu ul li a:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #acfe2e;
+  transition: width .3s ease-in-out;
+}
+.general-menu ul li a:hover:after,
+.general-menu ul li a:focus:after {
+  width: 90%;
 }
 .general-category{
   margin-bottom: 70px;
@@ -260,5 +294,57 @@ a{
 @media screen and (max-width: 768px) {
   .sidebar{
     flex-basis: 60px;
+  }
+  .logo{
+    visibility: hidden;
+  }
+  .sidebar-top{
+    background-image: url('../img/logo-small.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 34px;
+    margin-top: 10px;
+  }
+  .playlist{
+    display: none;
+  }
+  .album-list .album {
+    flex-basis: calc(100% / 4 - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 200px;
+  }
+  .general-menu ul li a {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .general-category h2{
+    font-size: 18px;
+  }
+  .album-list h4{
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  span{
+    visibility: hidden;
+  }
+  .installa-app{
+    border: 0;
+    height: 30px;
+    text-align: center;
+  }
+  .account{
+    text-align: center;
+  }
+  .fa-arrow-alt-circle-down{
+    font-size: 20px;
+    margin-right: 0;
+  }
+  .fa-user-circle{
+    font-size: 26px;
+    margin-left: 10px;
+  }
+  .sidebar-bottom{
+    height: 100px;
   }
 }
