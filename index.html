@@ -12,7 +12,7 @@
   <body>
     <!--container-app-->
     <div class="container">
-      
+
       <!--top-->
       <div class="top">
         <!--side-bar-->
@@ -57,7 +57,7 @@
               <a href="#">
                 <i class="fas fa-user-circle"></i>
               </a>
-              <span>John Doe</span>
+              <span id="John">John Doe</span>
             </div>
           </div>
         </aside>
@@ -153,9 +153,13 @@
         <footer class="bottom">
           <!--col-left-->
           <div class="col-left">
-            <img src="./img/sinister.jpeg" alt="">
-            <h6>Sinistar</h6>
-            <small>Brano Nome</small>
+            <div class="pic-left">
+              <img src="./img/sinister.jpeg" alt="">
+            </div>
+            <div class="name-song">
+              <h6>Sinistar</h6>
+              <small>Brano Nome</small>
+            </div>
             <a href="#"><i class="far fa-heart"></i></a>
             <a href="#"><i class="far fa-folder"></i></a>
           </div>
@@ -180,9 +184,23 @@
                 </li>
               </ul>
             </div>
+            <div class="line-player">
+              <div class="time-start">
+                0:25
+              </div>
+              <div class="line">
+                <i class="fas fa-circle player-circle"></i>
+                <div class="layover-player">
+                </div>
+              </div>
+              <div class="time-end">
+                4:35
+              </div>
+            </div>
           </div>
           <!--col-right-->
           <div class="col-right">
+           <div class="list-items">
             <ul>
               <li>
                 <a href="#"><i class="fas fa-list"></i></a>
@@ -194,8 +212,20 @@
                 <a href="#"><i class="fas fa-volume-up"></i></a>
               </li>
             </ul>
+           </div>
+            <div class="right-line-player">
+              <div class="line-right">
+                <i class="fas fa-circle player-circle"></i>
+                <div class="layover-player">
+                </div>
+              </div>
+            </div>
           </div>
         </footer>
     </div>
+
+    <!--Javascript-->
+    <script src="./js/main.js"></script>
+
   </body>
 </html>
