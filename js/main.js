@@ -1,1 +1,1 @@
-document.getElementByID('John').innerHTML="ilaria";
+document.getElementById('John').innerHTML="ilaria Galliano";
