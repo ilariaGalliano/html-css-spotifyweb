@@ -18,6 +18,9 @@ span{
   font-size: 14px;
   color: #666666;
 }
+span:hover{
+  color: #fff;
+}
 .text-center{
   text-align: center;
 }
@@ -67,6 +70,10 @@ span{
 .sidebar-top ul li a:hover{
   color: #fff;
   transition: .2s;
+}
+.sidebar-top ul li:hover{
+  color: #fff;
+  cursor: pointer;
 }
 .sidebar-top ul li a i:hover{
   color: #fff;
@@ -174,11 +181,12 @@ span{
   height: 2px;
   width: 0%;
   background-color: #acfe2e;
-  transition: width .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 .general-menu ul li a:hover:after,
 .general-menu ul li a:focus:after {
-  width: 90%;
+  width: 40%;
+  margin: 0 auto;
 }
 .general-category{
   margin-bottom: 70px;
@@ -322,6 +330,8 @@ span{
   position: absolute;
   top: -7px;
   left: 38%;
+  z-index: 2;
+  opacity: 0;
 }
 /* col-right */
 .col-right{
